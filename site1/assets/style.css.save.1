@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk');
+@import url('https://fonts.googleapis.com/css2?family=Tilt%20Prism');
+
+.* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Honk', sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('cloud.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    position: relative;
+    left: 5% ;
+    font-size: 1em;
+    color: #fff;
+    user-select: none;
+    margin: 0 100px 0 0;
+}
+
+.p-logo1 {
+    bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Honk', sans-serif;
+}
+
+.p-logo2 {
+    top: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tilt Prism', sans-serif;
+    color: ghostwhite;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    
+}
+
+.navigation button {
+
+    width: 130px;
+    border-radius: 6px;
+    outline: none;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: .5s;
+
+
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+
+
+.navigation button:hover {
+
+    background: #fff;
+    color: #162938;
+
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box-login {
+    width: 100%;
+    padding: 40px;
+}
+
+
+.form-box-login {
+    font-size: 1em;
+    color: antiquewhite;
+    text-align: center;
+}
+
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid ;
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: antiquewhite;
+    font-weight: 500;
+    pointer-events: none;
+
+}
+
+input-box input{
+    background: transparent;
+}
