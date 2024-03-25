@@ -1,17 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const wrapper = document.querySelector('.wrapper');
-    const loginLink = document.querySelector('.login-link');
-    const registerLink = document.querySelector('.register-link');
+const wrapper = document.querySelector('.wrapper');
+const loginLink = document.querySelector('.form-box-login');
+const registerLink = document.querySelector('.register-link');
 
-    if (wrapper && loginLink && registerLink) {
-        registerLink.addEventListener('click', function() {
-            wrapper.classList.add('active');
-        });
+registerLink.addEventListener('click', ()=> {
+    wrapper.classList.add('active');
+});
 
-        loginLink.addEventListener('click', function() {
-            wrapper.classList.remove('active');
-        });
-    } else {
-        console.error('Les éléments nécessaires ne sont pas trouvés.');
-    }
+LoginLink.addEventListener('click', ()=> {
+    wrapper.classList.add('active');
 });

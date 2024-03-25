@@ -24,6 +24,7 @@
     <title>Login & register</title>
     <link rel="stylesheet" href="assets/style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Honk" rel="stylesheet">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -58,7 +59,7 @@
             <div class="input-box">
                 <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
                 <input type="password" name="password" required>
-                <label>Password</label>
+                <label>Password</label> 
             </div>
             <div class="remember-forgot">
                 <label><input type="checkbox" name="remember">Remember me</label>

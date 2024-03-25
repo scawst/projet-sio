@@ -127,7 +127,7 @@ img {
     transition: height .2s ease; 
 }
 
-.wrapper .active {
+.wrapper.active {
     height: 520px;
 }
 
@@ -152,10 +152,10 @@ img {
     padding: 40px;
 }
 
-.wrapper-register .form-box-register {
+/*.wrapper .form-box-register {
     width: 100%;
     padding: 40px;
-}
+}*/
 
 .form-box-register {
     text-align: center;
